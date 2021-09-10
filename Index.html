@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Calculator</title>
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href=" CSS/main.css">
+</head>
+<body style="background-image: linear-gradient(to right bottom, #f18dec, #ff92be, #ffac95, #ffcf82, #f6f192);">
+			<br><br>	
+
+	<div class="calc">
+		<form name="form">
+			<input class="calc-display">
+		</form>
+		<table>
+			<tr>
+				<td><input type="button" value="C" onclick="C()"></td>
+				<td><input type="button" value="/" onclick="insrt('/')"></td>
+				<td><input type="button" value="<" onclick="del()"></td>
+				<td><input type="button" value="x" onclick="insrt('*')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="7" onclick="insrt(7)"></td>
+				<td><input type="button" value="8" onclick="insrt(8)"></td>
+				<td><input type="button" value="9" onclick="insrt(9)"></td>
+				<td><input type="button" value="-" onclick="insrt('-')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="4" onclick="insrt(4)"></td>
+				<td><input type="button" value="5" onclick="insrt(5)"></td>
+				<td><input type="button" value="6" onclick="insrt(6)"></td>
+				<td><input type="button" value="+" onclick="insrt('+')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="1" onclick="insrt(1)"></td>
+				<td><input type="button" value="2" onclick="insrt(2)"></td>
+				<td><input type="button" value="3" onclick="insrt(3)"></td>
+				<td rowspan="2"><input type="button" value="=" onclick="equal()" style="height: 158px; background-color: orange"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="button" value="0" onclick="insrt(0)" style="width: 158px;"></td>
+				<td><input type="button" value="." onclick="insrt('.')"></td>
+			</tr>
+		</table>
+	</div>
+	<br><br>
+	<script type="text/javascript" src="JS/main.js"></script>
+</body>
+</html>
